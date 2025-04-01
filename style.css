@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+}
+nav {
+    background: red;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+ul li {
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+ul li:hover > a {
+    background: darkred;
+}
+ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: red;
+    display: none;
+    flex-direction: column;
+}
+ul li:hover > ul {
+    display: block;
+}
+ul li ul li {
+    width: 150px;
+}
+ul li ul li a {
+    padding: 10px;
+}
+ul li ul li:hover > a {
+    background: black;
+}
+ul li ul li ul {
+    left: 100%;
+    top: 0;
+}
